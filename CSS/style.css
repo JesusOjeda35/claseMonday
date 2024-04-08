@@ -9,6 +9,7 @@
 }
 
 :root{
+    --color_backgroundpage:#53d4bf;
     --color_text-primary:#309C13;
     --color_text-secundary:#101E2C;
     --color_text-tertiary:#155404;
@@ -71,29 +72,29 @@ header {
 }
 
 .menu nav ul li a{
-    color: var(--color_text-secundary);
+    color: white;
     font-size: var(--lowText_font_size);
     position: relative;
 }
 
 .menu nav ul li a:hover{
-    color:var(--color_text-primary);
+    color:#a6a81b;
 }
 
 .btn_quote{
     display: block;
     padding: 8px 40px;
-    border: 2px solid #309C13;
+    border: 4px solid white;
     border-radius: 8px;
     font-weight: 500;
-    color: #155404;
+    color: white;
     margin: 0px 20px;
     transition: all 300ms;
 }
 
 .btn_quote:hover{
     color: white;
-    background:#309C13;
+    background:#a6a81b;
 }
 
 .menu .socialMedia{
@@ -104,14 +105,15 @@ header {
     margin: 0px 4px;
 }
 
-.menu .socialMedia img{
+.menu .socialMedia i{
     width: 20px;
+    color: white;
 }
 
 .container__cover{
     padding-top: 100px;
     padding-bottom: 100px;
-    background: var(--main_color-secundary);
+    background: #1c5809ea;
 }
 
 .cover{
@@ -130,13 +132,13 @@ header {
 
 .text__cover h1{
     font-size: 50px;
-    color: var(--color_text-secundary);
+    color:white;
 }
 
 .text__cover p{
     font-size: var(--text_paragraph);
     margin-top: 40px;
-    color: var(--color_text-primary);
+    color: white;
 }
 
 .btn__text{
@@ -146,18 +148,18 @@ header {
     padding: 10px 20px;
     text-align: center;
     font-weight: 500;
-    background: var(--main_color-primary);
-    color: #8B8CD3;
+    background: #1c5809ea;
+    color: white;
     border-radius: 8px;
-    border: 2px solid transparent;
+    border: 4px solid white;
     cursor: pointer;
     transition: all 300ms;
 }
 
 .btn__text:hover{
-    background: transparent;
-    border: 2px solid var(--main_color-primary);
-    color: var(--color_text-tertiary);
+    background: #a6a81b;
+    border: 4px solid white;
+    color: white;
 }
 
 .image__cover{
@@ -166,4 +168,89 @@ header {
 
 .image__cover img{
     width: 550px;
+}
+.container__card-primary{
+    padding-top: 100px;
+}
+
+.card__primary{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text__card-primary{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text__card-primary p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text__card-primary h1{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container__box-cardPrimary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box__card-primary{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.box__card-primary:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box__card-primary h2{
+    font-size: var(--text_title_card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box__card-primary p{
+    margin-top: 20px;
+}
+
+/*End Estilos Generales Cards*/
+.cover__bottom{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px; 
+}
+.text__coverbottom{
+
+}
+
+.image__coverbottom{
+    border: 1px solid transparent;
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+    margin-top: 40px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
 }
