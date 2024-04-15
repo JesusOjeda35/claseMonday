@@ -29,6 +29,7 @@ header {
     height: 100px;
     position: fixed;
     z-index: 100;
+    background-color: #1c5809ea;
 }
 
 .container_header {
@@ -212,6 +213,7 @@ header {
     border-radius: 20px;
     margin: 14px;
     transition: all 300ms;
+    background-image: url(../img/cr7img.jpg);
 }
 
 .box__card-primary:hover{
@@ -238,9 +240,6 @@ header {
     align-items: center;
     padding: 0px 20px; 
 }
-.text__coverbottom{
-
-}
 
 .image__coverbottom{
     border: 1px solid transparent;
@@ -253,4 +252,15 @@ header {
     font-weight: 500;
     display: flex;
     justify-content: center;
+}
+.box__card-primary img{
+    width: 100px;
+    height: 100px;
+    margin: 0px 0px 0px 80px;
+}
+.iconarrow{
+    margin: 0px 0px 0px 130px;
+}
+.iconarrow :hover{
+    cursor: pointer;
 }
