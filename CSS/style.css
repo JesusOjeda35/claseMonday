@@ -264,3 +264,72 @@ header {
 .iconarrow :hover{
     cursor: pointer;
 }
+.tittle-cards{
+    max-width: 800px;
+    margin: auto;
+}
+
+.tittle-cards p{
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.tittle-cards h1{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.container-card {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    flex-wrap: wrap; /* Asegura que los elementos se envuelvan a la siguiente línea */
+}
+
+.card-person {
+    width: calc(25% - 40px); /* 25% para mostrar 4 cartas */
+    margin: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #ffffff;
+    cursor: default;
+    display: flex;
+    flex-direction: column; /* Para que el contenido se alinee verticalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+.card-person img {
+    width: 100%;
+    height: auto; /* Evita que la imagen se estire */
+    border-radius: 25px 25px 0 0; /* Para que la esquina superior de la imagen sea redondeada */
+}
+
+.card-person .content-person {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-person .content-person p {
+    line-height: 1.5;
+}
+
+.card-person .content-person h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.card-person .content-person a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+}
