@@ -213,7 +213,7 @@ header {
     border-radius: 20px;
     margin: 14px;
     transition: all 300ms;
-    background-image: url(../img/cr7img.jpg);
+
 }
 
 .box__card-primary:hover{
