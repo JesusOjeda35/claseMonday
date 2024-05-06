@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // var variableGlobal = "Soy una variable global";
@@ -64,15 +66,176 @@
         // console.log("Tipo de person",typeof person);
         // console.log("Tipo de person.name",typeof person.nombre);
         // console.log("Tipo de x ", typeof x);
+        // function Car(make, model) {
+        //     this.make = make;
+        //     this.model = model;
+        // }
+        // var myCar = new Car("Toyota", "Corolla");
+        // console.log(myCar instanceof Car);
+        // var arr = [];
+        // var str = "Hola";
+        // console.log(Array.isArray(arr));
+        // console.log(typeof arr);
+        // console.log(typeof str);
+
+
+        // var firstName = "John";
+        // var lastName = "Doe";
+        // var fullName = firstName + " " + lastName;
+        // console.log("Full Name:", fullName);
+        // console.log("Comparación con operador ==:", firstName == lastName);
+        // console.log("Comparación con operador ===:", firstName === lastName);
+        // console.log("Comparación con operador !=:", firstName != lastName);
+        // console.log("Comparación con operador !==:", firstName !== lastName);
+        // console.log("Comparación con operador <:", firstName < lastName);
+        // console.log("Comparación con operador >:", firstName > lastName);
+        // console.log("Comparación con operador <=:", firstName <= lastName);
+        // console.log("Comparación con operador >=:", firstName >= lastName);
+
+
+        // var x = 5;
+        // x += 2; 
+        // console.log("x después de sumar 2:", x);
+        // x -= 3; 
+        // console.log("x después de restar 3:", x);
+        // x *= 4; 
+        // console.log("x después de multiplicar por 4:", x);
+        // x /= 2; 
+        // console.log("x después de dividir por 2:", x);
+        // var resultado = x ** 2;
+        // console.log("x elevado al cuadrado:", resultado);
+
+
+        // function checkRange(num) {
+        //     var result = (num >= 1 && num <= 10) ? "El número está dentro del rango" : "El número está fuera del rango";
+        //     console.log(result);
+        // }
+        // checkRange(5);
+        // checkRange(15);
+
+
         ////////////////////////////////////////////////////////////////////////////
-        
-        
+
+
+        const mayor_Edad = 18;
+        let edad = 18;
+        if (edad >= mayor_Edad) {
+            console.log("Eres mayor de edad");
+        } else {
+            console.log("Eres menor de edad");
+        }
+        let num1 = 2;
+        if (num1 > 1) {
+            console.log("es mayor a uno")
+        } else if (num1 == 1) {
+            console.log("es igual a uno")
+        } else {
+            console.log("Es menor que uno")
+        }
+        var diaDeLaSemana = "lunes";
+        switch (diaDeLaSemana) {
+            case "lunes":
+                console.log("Hoy es lunes.");
+                break;
+            case "martes":
+                console.log("Hoy es martes.");
+                break;
+            case "miércoles":
+                console.log("Hoy es miércoles.");
+                break;
+            case "jueves":
+                console.log("Hoy es jueves.");
+                break;
+            case "viernes":
+                console.log("Hoy es viernes.");
+                break;
+            case "sábado":
+                console.log("Hoy es sábado.");
+                break;
+            case "domingo":
+                console.log("Hoy es domingo.");
+                break;
+            default:
+                console.log("No es un día válido.");
+        }
+        // for (let i = 1; i <= 5; i++) {
+        //     console.log(i);
+        // }
+        // let j = 1;
+        // while (j <= 5) {
+        //     console.log(j);
+        //     j++;
+        // }
+        // let k = 1;
+        // do {
+        //     console.log(k);
+        //     k++;
+        // } while (k <= 5);
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+            if (i === 5) {
+                console.log("¡Se alcanzó el número 5!");
+                break; // Sale del bucle cuando i es igual a 5
+            }
+        }
+        for (let i = 1; i <= 10; i++) {
+            if (i % 2 === 0) {
+                continue; // Omite la impresión de números pares
+            }
+            console.log(i);
+        }
+        let hoursWorked = 50;
+        let priceHour = 4000;
+        let totalPaid = hoursWorked * priceHour;
+        if (hoursWorked > 40) {
+            totalPaid = totalPaid + (((hoursWorked - 40) * 1.5) * 4000);
+        }
+        console.log(totalPaid);
+
+
+        var num=prompt("Ingrese un numero");
+        switch (num) {
+            case "1":
+                console.log("Enero");
+                break;
+            case "2":
+                console.log("Febrero");
+                break;
+            case "3":
+                console.log("Marzo");
+                break;
+            case "4":
+                console.log("Abril");
+                break;
+            case "5":
+                console.log("Mayo");
+                break;
+            case "6":
+                console.log("Junio");
+                break;
+            case "7":
+                console.log("Julio");
+                break;
+            case "8":
+                console.log("Agosto");
+                break;
+            case "9":
+                console.log("Septiembre");
+                break;
+            case "10":
+                console.log("Octubre");
+                break;
+            case "11":
+                console.log("Noviembre");
+                break;
+            case "12":
+                console.log("Diciembre");
+                break;
+        }
     </script>
 </body>
+
 </html>
-Definir una función constructora Car que tenga propiedades make y
-model. Crear un objeto myCar usando Car con valores "Toyota" y "Corolla"
-respectivamente. Usar el operador instanceof para verificar si myCar es una
-instancia de Car. También, crear un array arr y una variable str con valor "Hola", y
-verificar si arr es un array utilizando Array.isArray(arr). Mostrar por consola el tipo
-de arr y el tipo de str utilizando typeof.
+
+Escribe un programa en js que calcule el salario semanal de un trabajador segun las horas trabajadas. si el trabajador
+ha trabajado mas de 40 horas en una semana, se considera que la horas extras tienen un pago de tiempo y medio
